@@ -32,14 +32,15 @@ int main()
     //     printf("\n");
     // }
     // int i = is_prime(7);
-    int i = gcm(10,12);
+    int i = gcd(10,12);
     std::cout << i;
     return 0;
 }
 
 bool is_prime(int n)
 {
-    for (int i=2;i<=sqrt(n);i++)
+    int tmp = sqrt(n);
+    for (int i=2;i<=tmp;i++)
         if (n % i == 0)
             return false;
         
