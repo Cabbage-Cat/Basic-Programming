@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdio>
-#include <cstring>
+#include <algorithm>
+
 #define MAX_N 1000
 
 int x[MAX_N];
@@ -15,8 +16,7 @@ int main()
 
 void find_prime()
 {
-    for (int i=0;i<MAX_N;i++)
-        x[i] = 1;
+    std::fill(x,x+MAX_N,1);
     for (int i=2;i<MAX_N;i++)
     {
         if (x[i] == 1)
