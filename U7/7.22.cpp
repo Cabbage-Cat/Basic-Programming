@@ -72,7 +72,7 @@ void mazeTraverse(char (*maze)[13],P p)
             printf("\n");
             maze[tmp.first][tmp.second] = '.';
             
-            //std::cout << tmp.first << ',' << tmp.second << "  ";
+            // std::cout << tmp.first << ',' << tmp.second << "  ";
             path_tmp.pop();
         }
         return;
